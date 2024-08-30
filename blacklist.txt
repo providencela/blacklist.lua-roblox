@@ -1,0 +1,20 @@
+local blacklist = {
+
+  "Dirt brown",
+  "Redish brown",
+  "Brown",
+  "Dark orange",
+)
+
+game.Players.PlayerAdded:Connect(function(plr)
+  spawn(function()
+    repeat wait() until plr.Character; local char = plr.Character
+    local bc = char:WaitForChild('Body Colors')
+
+    for i.p in pairs(blacklist)
+      if BrickColor.new(p) == HeadColor then
+        plr:Kick("no")
+      end
+    end
+  end)
+end)
